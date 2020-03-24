@@ -1,0 +1,114 @@
+<link rel="stylesheet" type="text/css" href="documentation.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>Python Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction_to_Python">Introduction to python</a></li>
+<li><a class="nav-link" href="#Python_Identifiers">Python Identifiers</a></li>
+<li><a class="nav-link" href="#Python_Datatypes">Python DataTypes</a></li>
+<li><a class="nav-link" href="#Statements_in_Python">Statements in Python</a></li>
+<li><a class="nav-link" href="#Python_Loops">Python Loops</a></li>
+<li><a class="nav-link" href="#Break_&_Continue">Break & Continue</a></li>
+  </ul></nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction_to_Python">
+    <header id="Python Introduction"><b>Introduction to Python</b></header>
+    <p>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.</p>
+    <p>
+Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+  </section>
+  <section class="main-section" id="Python_Identifiers">
+    <header id="basic Syntax"><b>Python Identifiers</b></header>
+    <p>A Python identifier is a name used to identify a variable, function, class,module or other object. An identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters, underscores and digits (0 to 9).
+Python does not allow punctuation characters such as @, $, and % within identifiers. Python is a case sensitive programming language. Thus, Manpower and manpower are two different identifiers in Python.
+Here are naming conventions for Python identifiers −Class names start with an uppercase letter. All other identifiers start with a lowercase letter.Starting an identifier with a single leading underscore indicates that the identifier is private.Starting an identifier with two leading underscores indicates a strongly private identifier.If the identifier also ends with two trailing underscores, the identifier is a language-defined special name.
+</p>
+</section>
+<section class="main-section" id="Python_Datatypes">
+  <header id="Python datatypes"><b>Python Datatypes</b></header>
+    <p><b>Numbers</b><br>
+Number stores numeric values. Python creates Number objects when a number is assigned to a variable.Python supports 4 types of numeric data.<ul><li><b>int</b>(signed integers like 10, 2, 29, etc.)</li><li><b>long</b> (long integers used for a higher range of values like 908090800L, -0x1929292L, etc.)</li><li><b>float</b> (float is used to store floating point numbers like 1.9, 9.902, 15.2, etc.)</li><li><b>complex</b> (complex numbers like 2.14j, 2.0 + 2.3j, etc.)</li></ul>
+<p>Python allows us to use a lower-case L to be used with long integers. However, we must always use an upper-case L to avoid confusion.
+A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts respectively).</p><b>String</b><p>
+The string can be defined as the sequence of characters represented in the quotation marks. In python, we can use single, double, or triple quotes to define a string.String handling in python is a straightforward task since there are various inbuilt functions and operators provided.</p>
+  <p>
+  <p><b>List</b><br>
+Lists are similar to arrays in C. However; the list can contain data of different types. The items stored in the list are separated with a comma (,) and enclosed within square brackets [].
+We can use slice [:] operators to access the data of the list. The concatenation operator (+) and repetition operator (*) works with the list in the same way as they were working with the strings.</p>
+  <p><b>Tuples</b><br>
+A tuple is similar to the list in many ways. Like lists, tuples also contain the collection of the items of different data types. The items of the tuple are separated with a comma (,) and enclosed in parentheses ().
+A tuple is a read-only data structure as we can't modify the size and value of the items of a tuple.
+</p>
+  <b>Dictionary</b><br>
+Dictionary is an ordered set of a key-value pair of items. It is like an associative array or a hash table where each key stores a specific value. Key can hold any primitive data type whereas value is an arbitrary Python object.
+  The items in the dictionary are separated with the comma and enclosed in the curly braces {}.</p>
+  <code>
+    A=10  
+b="Hi Python"  
+c = 10.5  
+print(type(a));   
+print(type(b));   
+    print(type(c));</code>
+  </section>
+<section class="main-section" id="Statements_in_Python">
+  <header id="Python statements"><b>Statements in Python</b></header>
+    <p>Decision making is the most important aspect of almost all the programming languages. As the name implies, decision making allows us to run a particular block of code for a particular decision. Here, the decisions are made on the validity of the particular conditions. Condition checking is the backbone of decision making. </p>
+    <ul><li><p>
+The if statement is used to test a particular condition and if the condition is true, it executes a block of code known as if-block. The condition of if statement can be any valid logical expression which can be either evaluated to true or false. </p></li>
+      <code>
+        num = int(input("enter the number?")) 
+        if num%2 == 0:  
+        print("Number is even")
+      </code>
+  <li><p>
+The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.If the condition is true, then the if-block is executed. Otherwise, the else-block is executed.  </p></li>
+  <code>
+    age = int (input("Enter your age? "))  
+    if age>=18:  
+        print("You are eligible to vote !!"); 
+    else:  
+        print("Sorry! you have to wait !!");  </code>
+  <li><p>
+The elif statement enables us to check multiple conditions and execute the specific block of statements depending upon the true condition among them. We can have any number of elif statements in our program depending upon our need. However, using elif is optional.The elif statement works like an if-else-if ladder statement in C. It must be succeeded by an if statement. </p></li>
+      <code>
+            number = int(input("Enter the number?"))  
+    if number==10:  
+        print("number is equals to 10")  
+    elif number==50:  
+        print("number is equal to 50");  
+    elif number==100:  
+        print("number is equal to 100");  
+    else:  
+        print("number is not equal to 10, 50 or 100");  </code>
+  </section>
+<section class="main-section" id="Python_Loops">
+ <header id="loop"><b>Python Loops</b></header>
+    <p>The flow of the programs written in any programming language is sequential by default. Sometimes we may need to alter the flow of the program. The execution of a specific code may need to be repeated several numbers of times.For this purpose, The programming languages provide various types of loops which are capable of repeating some specific code several numbers of times.</p>
+  <ul><li><p>The <b>for loop</b> in Python is used to iterate the statements or a part of the program several times. It is frequently used to traverse the data structures like list, tuple, or dictionary.</p></li>
+  <li><p>
+    <b>The Nested for loop</b> in python allows us to nest any number of for loops inside a for loop. The inner loop is executed n number of times for every iteration of the outer loop.</p></li>
+  <li>  <p>The while loop is also known as a pre-tested loop. In general, a while loop allows a part of the code to be executed as long as the given condition is true.
+
+It can be viewed as a repeating if statement. The while loop is mostly used in the case where the number of iterations is not known in advance.</p></li>
+    <code>
+          i=1;  
+    while i<=10:  
+        print(i);  
+        i=i+1;  
+   </code>
+  </section>
+    <section class="main-section" id="Break_&_Continue">
+    <header id="Python jump"><b> Break & Continue</b></header>
+      <p>The <b>break</b> is a keyword in python which is used to bring the program control out of the loop. The break statement breaks the loops one by one, i.e., in the case of nested loops, it breaks the inner loop first and then proceeds to outer loops. In other words, we can say that break is used to abort the current execution of the program and the control goes to the next line after the loop.The break is commonly used in the cases where we need to break the loop for a given condition.</p>
+      <code>
+            list =[1,2,3,4]  
+            count = 1;  
+            for i in list:  
+            if i == 4:  
+            print("item matched")  
+            count = count + 1;  
+            break  
+            print("found at",count,"location");  
+      </code>
+<p><b>The continue statement</b>in python is used to bring the program control to the beginning of the loop. The continue statement skips the remaining lines of code inside the loop and start with the next iteration. It is mainly used for a particular condition inside the loop so that we can skip some specific code for a particular condition.</p>
+  </section>
